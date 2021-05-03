@@ -11,7 +11,12 @@
 #import <IGListKit/IGListAdapter.h>
 #import <IGListKit/IGListDisplayDelegate.h>
 #import <IGListKit/IGListSectionController.h>
+
+#if SWIFT_PACKAGE
+#import "IGListSectionControllerInternal.h"
+#else
 #import <IGListKit/IGListSectionControllerInternal.h>
+#endif
 
 @interface IGListDisplayHandler ()
 

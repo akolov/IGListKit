@@ -8,11 +8,16 @@
 #import "IGListAdapter+UICollectionView.h"
 
 #import <IGListDiffKit/IGListAssert.h>
-#import <IGListKit/IGListAdapterInternal.h>
 #import <IGListKit/IGListSectionController.h>
-#import <IGListKit/IGListSectionControllerInternal.h>
 
 #import "IGListAdapterInternal.h"
+
+#if SWIFT_PACKAGE
+#import "IGListSectionControllerInternal.h"
+#else
+#import <IGListKit/IGListAdapterInternal.h>
+#import <IGListKit/IGListSectionControllerInternal.h>
+#endif
 
 @implementation IGListAdapter (UICollectionView)
 

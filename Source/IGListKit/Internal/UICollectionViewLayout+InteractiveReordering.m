@@ -9,8 +9,13 @@
 
 #import <objc/runtime.h>
 
-#import <IGListKit/IGListAdapterInternal.h>
 #import <IGListKit/IGListSectionController.h>
+
+#if SWIFT_PACKAGE
+#import "IGListAdapterInternal.h"
+#else
+#import <IGListKit/IGListAdapterInternal.h>
+#endif
 
 @implementation UICollectionViewLayout (InteractiveReordering)
 
